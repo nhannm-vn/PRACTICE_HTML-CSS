@@ -1,0 +1,19 @@
+.table-content,
+.table-content td{
+    border: 1px, solid, black;
+    border-collapse: collapse;
+}
+.table-content{
+    width: 100%;
+    /* table chiếm full màn hình */
+}
+.img-demo{
+    width: 100%;
+    height: 100%;
+    border: 1px, solid, red;
+    /* ôm trọn cái table luôn */
+}
+.left-side{
+    width: 30%;
+    /* chiếm 30% so với 100% của width table */
+}

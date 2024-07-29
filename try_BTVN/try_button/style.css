@@ -1,0 +1,25 @@
+.demo-button{
+    display: inline-block;
+    text-align: center;
+    color: darkmagenta;
+    width: 100px;
+    border: 1px solid black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding: 15px 10px;
+    background-color: pink;
+    margin: 20px;
+    transition: 0.3s;
+    /* trc khi do bong */
+    box-shadow: 0px 0px 0px 0px;
+}
+.demo-button:hover{
+    color: yellow;
+    background-color: crimson;
+    box-shadow: -2px -2px 0px 0px;
+}
+.demo-button:active{
+    color: white !important;
+}
