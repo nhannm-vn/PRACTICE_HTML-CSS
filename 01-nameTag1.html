@@ -1,0 +1,189 @@
+<!-- comment -->
+
+<!-- 
+    html: hyper text markup language: ngôn ngữ đánh dấu siêu văn bản
+    hyper text: siêu văn bản
+    markup: đánh dấu, làm nổi bật lên
+
+    *Đây không phải là ngôn ngữ lập trình!!!
+-->
+
+<!--*Cái tệp ở ngoài document:
+    là file soạn thảo văn bản mà thôi. Nếu muốn hiển thị nó thì
+    cần chạy trên nền tảng web page  (browser: trình duyệt web)
+    
+    *Trong html thì các phần tử đều là tag | thẻ    
+    <tageName attribute> content <tageName/> 
+    html, jsx, jsp, pug ==> các kiểu dữ liệu của DOCTYPE
+-->
+<!DOCTYPE html> <!-- dấu ! là important//DOCTYPE: kiểu dữ liệu doc là html  --> 
+<html lang="vi" style="scroll-behavior: smooth;">
+    <!-- dòng smooth giúp chạy mượt -->
+    <head>
+        <!-- liên quan đến sale// vd: muốn tìm một cái web xe đẹp 
+            đọc web trên xuống dưới thấy đặt tên xe đẹp nên được tìm trước 
+        -->
+        <!-- <meta xe moi> ==> để tìm kiếm nhanh mà không hiển thị trên web -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bài 1: name tag</title> <!-- đặt tên cho web -->
+    </head>
+    <body>
+        <!-- bộ heading
+            *Trong html người ta thường đặt tên các tag|thẻ dựa vào chức năng của nó 
+        -->
+        <h1>Tiêu đề: Anh Điệp đẹp trai quá</h1><!-- 36 -->
+        <h2>I-Phân tích vẻ đẹp trai của anh Điệp</h2><!-- 28 -->
+        <h3>I.1 đôi mắt của người đàn ông nhiều tiền</h3>
+        <h3>I.2 nụ cười tri thức trong bóng tối thời đại mới</h3>
+        <!-- đầu mục: heading
+            có tất cả 6 thẻ h1 => h6
+            h càng lớn thì chữ càng nhỏ
+            các thẻ h thường dùng để đầu mục và title
+            *Các thẻ heading đều có display là Block
+            **block là các thẻ mà nó cố gắng chiếm trọn một hàng
+            **inline-block: thẻ mà có khối chỉ bao gọn content, vẫn có viền bình thường
+            ==> là cái hộp có viền nhưng ăn khít như inline
+        -->
+
+        <!-- độ display cho thẻ h để nó có thể lên cùng một dòng -->
+        <h5 style="display: inline-block;">Người đẹp trai nhất</h5>
+        <h6 style="display: inline-block;">Là Anh Điệp</h6>
+        <!-- giúp lên cùng dòng nếu bóp nhỏ k đủ thì nhảy xuống-->
+
+        <!-- p: paragraghs: đoạn văn
+            **display: block
+            dấu xuống hàng <br/>
+            &#8194;: xuống hàng
+        -->
+        <p>
+            tôi tên là &#8194; &#8194; &#8194; Điệp, nhà tôi ở quận 9 <br/>
+            3 đời nhà tôi làm gỗ, đến đời tôi làm yangho
+        </p>
+        <!-- pre: preformated : giúp in giống hoàn toàn
+            *Display: block
+        -->
+
+        <!-- nó sẽ bị khi kéo web thì nó sẽ có thêm cái thanh kéo ngang vì nó
+        sẽ không tự dồn vào ==> lỗi hở sườn 
+        -->
+        <!-- <pre>
+            tôi tên là Điệp, nhà tôi ở quận 9
+            3 đời nhà tôi làm gỗ, đến đời tôi làm yangho
+         </pre> -->
+        
+         <!-- hầu hết các thẻ trong html đều có thể dùng thuộc tính style
+            1.display
+            2.text-align: căn lề cho chữ bên trong thẻ(nếu nhà em rộng còn trống thì em
+            mới căn lề được)
+         -->
+        
+        <!-- thẻ p nó có display là block cho nên nó rộng thì điều chỉnh canh lề
+        được, ngon 
+        ==> inline-block dell làm được do cái hộp nó khít
+        -->
+        <p style="text-align: center;">demo text-align với block</p>
+        <p style="text-align: center; display: inline-block;">demo text-align với inline-block</p>
+
+        <!-- tag formatting: bộ tượng hình -->
+        <p>
+            <em>xin chào</em> các bạn,
+            <strong>tao</strong> <del>tôi</del> là <mark>Điệp đẹp trai</mark>  
+        </p>
+
+        <!-- 
+            i: italic: nghiêng | em: nhấn mạnh (in nghiêng)
+            b: bold: đậm        | strong: mạnh (in đậm)
+            mark: hightlight tô đậm
+            del : delete gạch ngang
+            mark: hightlight tô đậm
+
+            *display: inline: chỉ có content thôi, không có viền và k có hộp
+            k làm cho thằng khác xuống dòng
+
+            *trên thực tế 1 thẻ bất kỳ thì chỉ có 2 dạng block hoặc inline
+
+            
+            *tất cả các thằng inline đều nằm trong một thẻ block p hoặc h
+        -->
+        <p>H<small>2</small>0: nước</p>
+        <!-- tuột khỏi page line luôn -->
+        <p>H<sub>2</sub>0: nước</p>
+        <p>ax<sup>2</sup> + bx + c = 0</p>
+        <!-- đều là inline -->
+
+        <!-- pseudo tag: tag giả | thẻ mà không có chức năng gì cả 
+            span: display inline
+            div(divise: chia ): display block 
+        -->
+        
+        <!-- span -->
+        <p><span style="color: red; text-decoration: line-through; font-size: 30px;">x</span>in chào bạn</p>
+        <!-- span là thẻ không có chức năng gì hết nhưng nó là inline
+        giúp cho không xuống dòng 
+        -->
+
+
+        <!-- div -->
+        <div style="color: red;">
+            <p>Người giàu thường sống tình cảm</p>
+            <p>Ai cũng có thể trở thành người giàu</p>
+            <p>Nếu bố mẹ họ giàu</p> 
+        </div>
+        
+
+        <p style="color: red;">
+            Lòng ta trống lắm, lòng ta sụp <br/>
+            Như túp nhà không bốn vách xiêu;<br/>
+            Em chẳng cứu giùm, em bỏ mặc <br/>
+            Mưa đưa ta đến bến Đìu hiu. <br/>
+        </p>
+
+        <p style="color: blue; text-align: right;">
+            Em ở bên mình; ta ngó say, <br/>
+            Song le bên ấy với bên này <br/>
+            Cũng xa như những bờ xa cách, <br/>
+            Không có thuyền qua, không cánh bay. <br/>
+        </p>
+
+        <p style="color: red;">
+            Ta thấy em xinh, khẽ lắc đầu. <br/>
+            Bởi vì ta có được em đâu! <br/>
+            Tay kia sẽ ấp nhiều tay khác, <br/>
+            Môi ấy vì ai sẽ đượm mầu. <br/>
+        </p>
+        
+        <!-- Vì sao không bỏ từng dòng vào thẻ p
+            ==> vì thẻ p là block nên bỏ vào thì giữa chúng sẽ có khoảng cách 
+        -->
+
+        <!-- a: hyper link references - link-->
+        <!--_blank: qua tab mới -->
+        <!--_self: chính nó -->
+        
+        <!-- cursor: giúp đưa con chuột vô nó không lên link -->
+        <p><a href="https://www.facebook.com/nomadic.lodestar" 
+            target="_blank"
+            style="color: black; text-decoration: none; cursor: default;"
+            >Đường đến tri thức</a>
+        </p>
+
+        <!-- <div style="width: 100vw; height: 100vh;">
+            <a href="https://www.facebook.com/profile.php?id=100034927024160&mibextid=ZbWKwL"
+            style="display: inline-block; width: 100%; height: 100%;">
+
+            </a>
+        </div> hack link--> 
+
+        <p><a href="#khobau1111">đường tới kho báu nè</a></p>
+        <p>Theo báo Mỹ Washington Post, ít người biết rằng, bà Harris từng tham gia tranh cử tổng thống sơ bộ vào năm 2020. Bà Harris khi đó dựa vào kinh nghiệm khi còn là công tố viên để nêu bật vai trò trong việc đối phó ông Trump. Nhưng đảng Dân chủ lúc đó ưu tiên lựa chọn ông Joe Biden, người sau này đắc cử Tổng thống Mỹ.
+            4 năm sau, ông Biden tuyên bố rút lui. Đảng Dân chủ đang giành phần lớn sự ủng hộ cho bà Harris, người gần như chắc chắn đại diện đảng tranh cử tổng thống Mỹ vào tháng 11 tới.
+            Xét về kinh nghiệm cá nhân, bà Harris được cho là có thể đối phó hiệu quả ông Trump, đặc biệt là khi cựu Tổng thống Mỹ vài tháng trước đã bị kết tội hình sự vì làm giả hồ sơ kinh doanh.
+            "Có ranh giới rõ ràng giữa bà Harris, <span id="khobau1111">kho báu Trương Mỹ Lan</span> lý lịch của bà với cựu Tổng thống Trump, người đã bị kết tội hình sự và nhiều lần phải hầu tòa", Bakari Sellers, người từng là hạ nghị sĩ và là nhân vật ủng hộ bà Harris, nói với tờ Washington Post.
+            Hôm 22/7, các hãng truyền thông Mỹ đồng loạt đưa tin, bà Harris đã giành đủ sự ủng hộ cần thiết của ít nhất 1.976 đại biểu đảng Dân chủ để có thể đại điện đảng tranh cử tổng thống Mỹ. Bà Harris đã bắt đầu sự chuẩn bị cần thiết để tranh cử tổng thống, khi bà đưa ra tuyên bố công khai nhắm vào ông Trump.
+            “Tôi đã đối phó với đủ kiểu người. Những kẻ ngược đãi phụ nữ, những kẻ lừa đảo, những kẻ gian lận đã phá vỡ các quy tắc. Vì vậy, hãy lắng nghe tôi khi tôi nói rằng tôi biết kiểu người của Donald Trump”, bà Harris nói hôm 22/7.
+            "Đây là mẫu người có thể trình bày rõ ràng và mạch lạc các vụ kiện chống lại ông Trump,” Jim Margolis, cựu cố vấn của bà Harris, nói. "Bà ấy có phẩm chất của một công tố viên kỳ cựu. Bà ấy là mẫu người luôn chiếm ưu thế trong các cuộc tranh luận, đưa ra các luận điệu sắc bén và có thể phản công rất mạnh mẽ. Bà ấy không</p>
+    </body>
+</html>
+
+

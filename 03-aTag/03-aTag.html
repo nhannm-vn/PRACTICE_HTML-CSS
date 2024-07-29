@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bài 3: a tag hacking</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <a href="#abc" target="_self">click me</a>
+        <!-- hyper link reference 
+        cái link mình chưa truy cập lần nào nó sẽ màu xanh(blue): unvisited
+        -->
+
+        <!-- 
+        **tên đúng: pseudo class
+        *link status: unvisited: chưa bấm vào link lần nào(blue)
+                      active: đang đè chuột(red)
+                      visited: đã bấm vào(purple)
+                      hover: đưa con chuột vào(none)
+        -->
+        <a class="demo-status" href="#">Click me!</a>
+
+        <!-- buttonn -->
+         <button>button nè</button>
+
+        <!-- dung thẻ a để cosplay button-->
+        <a class="btn-demo" href="mailto:nguyennhanhumada@gmail.com">Send nude</a>
+    
+        <!-- demo banner -->
+         <a href="https://vi.wikipedia.org/wiki/T%C6%B0_b%E1%BA%A3n" target="_blank"><img src="./logoFPT.jpg" alt=""></a>
+        
+        <!-- *copy path cái hình(tuyệt đối): giống 100% với máy mình
+         nhưng k đúng với máy người khác
+
+        *Tương đối sẽ là ./(nhìn thấy xung quanh chung thư mục)
+        ../ thì nhìn thấy luôn ở ngoài
+
+        alt: để dừng báo lỗi khi hư link
+        -->
+    </body>
+</html>

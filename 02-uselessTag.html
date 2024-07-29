@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <!-- head: lưu thông tin kèm tài nguyên của trang -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>bài 2: các thẻ vô dụng</title>
+        <!-- css -->
+        <style>
+            p{
+                color: red;
+            }
+            p:nth-child(2){
+                color: blue;
+            }
+            .dacbiet{
+                font-style: italic;
+            }
+            .dacbiet2{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- quotation:  -->
+        <p class="dacbiet">có một người nói rằng "một cây làm chẳng nên non
+            ba cây chụm lại vẫn là 3 cây"
+        </p>
+        <p class="dacbiet">có một người nói rằng <q class="dacbiet2">một cây làm chẳng nên non
+            ba cây chụm lại vẫn là 3 cây</q>
+        </p>
+
+        <!-- block quote: giúp đưa nội dung ra giữa màn hình-->
+        <!-- abbr: chỉ rõ trích dẫn (inline)
+        đưa chuột vào hiện lên tên trong title  
+        -->
+        <p>
+            công chúa thuộc về <abbr title="Lê Điệp">người đẹp trai nhất</abbr>
+        </p>
+        <!-- address: in nghiêng (p + em + block không viền) -->
+         <address>115/13 đường đình Phong Phú</address>
+
+         <!-- cite: nhấn mạnh tác phẩm(thuộc tính nghiêng)-->
+         <p><cite>tác phẩm của</cite> ViEmVanGood</p>
+
+          <!-- bdo: copy sau đổi ngược lại-->
+        <bdo dir="rtl">xin chào bạn</bdo>
+
+        <p style="background-color: teal;">demo đổi màu nền</p>
+    </body>
+</html>

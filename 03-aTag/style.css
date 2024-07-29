@@ -1,0 +1,79 @@
+.demo-status{
+    color: teal;
+
+}
+/* khi để color: teal như vậy có nghĩa là tất cả các trạng
+thái link-status của nó đều có màu teal
+*/
+.demo-status:active{
+    color: blue !important;
+}
+.demo-status:hover{
+    color: purple;
+}
+/* 
+*Vì bản chất là trc khi active thì đã hover đưa chuột vào rồi
+*để hover ở dưới thì active thì sẽ k thấy đc màu blue của active nữa
+vì càng để ở dưới thì sẽ càng mạnh
+
+==> cách giải quyết
+1. đưa active xuống dưới để active có hiệu lực cao hơn hover
+2. thêm trạng thái !important(k có thuộc tính nào viết đè lên tao)
+*/
+
+/* nó k phải hộp nên nó chỉ luôn luôn ôm sát cái content của nó thôi
+nên có chỉnh độ lớn thêm cũng vậy(vì cái thẻ a tính là inline)
+==> nên phải độ lại cái thẻ a này thành inline-block vì muốn có thêm 
+cái hộp nên có thể tăng kích thước được
+*/
+/* 
+nếu anh tăng width và height thì k thấy đc nên vì vậy cần phải kẻ
+cái đường viền để nhìn(border x x x)
+*/
+.btn-demo{
+    display: inline-block;
+    border: 1px solid black;
+    /* độ dài đường viền// kiểu dáng đường viền(gover, solid, outlet)// màu */
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    /* font-size: kích thước to nhỏ, font-weight: độ dày của chữ */
+    /* thin độ dày: 400
+       bold: 700 dày hơn
+       lên tới 900 cần thư viện
+       *nếu ngoài mấy cái đó thì nó k chạy
+    */
+
+    /* 
+    cái nút thì cái đường viền phải cách cái chữ một khoảng nhỏ
+    */
+    padding: 10px 15px;
+    /* trên dưới là 10 trái phải 20 
+    10px 20px 30px 40px nó sẽ đi trên phải dưới trái
+    */
+    margin: 10px;
+    transition: 0.3s;
+    /* để đây để đi vô đi ra cũng chậm */
+    box-shadow: 0px 0px 0px 0px;
+    /* khi sờ vào mới hiện dường viền 
+    box-shadow dừng cho cái hover đưa vào thì thấy bóng mờ mờ
+    để trên này để dễ text
+    */
+}
+.btn-demo:hover{
+    background-color: black;
+    color: white;
+    box-shadow: -2px 2px 0px 0px;
+}
+/*model-box 
+**Bất cứ cái hộp nào cũng có các thành phần này trừ inline chỉ có content
+chiều dài nút: w(content) + 2 * padding + 2 * border
+**nếu hỏi nút chiếm cỡ nào sẽ tính luôn mergin
+
+margin: khoảng cách đường viền so với các vật thể khác
+border: đường viền 
+padding: khoảng cách từ đường viền vào content
+content: nội dung
+*/

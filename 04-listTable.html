@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi" style="scroll-behavior: smooth;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bài 4-list và table</title>
+        <style>
+            .table-demo,
+            .table-demo td{
+                border: 1px, solid, black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- list: danh sách liệt kê 
+            ul, ol, dl 
+            **Trong list luôn là thẻ li
+            li: list item(một cái phần tử của list)
+        -->
+        <!-- ordered list: danh sách có thứ tự sắp xếp
+            display: block 
+        -->
+        <ol type="I" start="0">
+            <li>Cà phê sữa</li>
+            <li>Cà phê đá</li>
+            <li>Cà phê muối</li>
+        </ol>
+        <!-- ul: unordered list: danh sách không có thứ tự 
+            **ul thì không có typle 
+            **display: block
+        -->
+        <ul style="list-style-type: square;">
+            <li>Cà phê sữa</li>
+            <li>Cà phê đá</li>
+            <li>Cà phê muối</li>
+        </ul>
+
+        <!-- lỗi thường gặp -->
+         <ul style="list-style-type: square;">
+            <li>
+                Cà phê
+                <ul>
+                    <li>Cà phê sữa</li>
+                    <li>Cà phê đá</li>
+                    <li>cà phê muối</li>
+                </ul>
+            </li>
+            <li>
+                rượu
+                <ul>
+                    <li>Gin</li>
+                    <li>Rum</li>
+                    <li>Henessy</li>
+                </ul>
+            </li>
+         </ul>
+
+        <!-- table -->
+        <table class="table-demo">
+            <tr>
+                <td colspan="2">1</td>
+                <!-- <td>2</td> -->
+                <td rowspan="2">3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <!-- <td>6</td> -->
+            </tr>
+            <tr>
+                <td colspan="3">7</td>
+                <!-- <td>8</td>
+                <td>9</td> -->
+            </tr>
+        </table>
+        table>tr*11>td*4
+    </body>
+</html>
