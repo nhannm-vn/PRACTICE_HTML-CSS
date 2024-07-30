@@ -1,0 +1,16 @@
+table,
+table td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+}
+.left-side{
+    width: 30%;
+}
+.img-demo{
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+}
