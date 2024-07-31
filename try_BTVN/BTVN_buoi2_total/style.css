@@ -1,0 +1,49 @@
+.table-number,
+.table-number td{
+    border: 1px dashed black;
+    /* dashed: nét đứt */
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.button-fake{
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    text-align: center;
+    color: azure;
+    background-color: black;
+    text-shadow:  -1px 0px 0px pink;
+    transition: 1s;
+    box-shadow: 0px 0px 0px 0px;
+}
+.button-fake:hover{
+    box-shadow: -3px -4px 0px 0px;
+    color: chartreuse;
+    background-color: chocolate;
+}
+.button-fake:active{
+    color: purple !important;
+}
+
+.table-img,
+.table-img td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.table-img{
+    width: 100%;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+.list{
+    width: 70%;
+}

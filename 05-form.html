@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài số 5: form</title>
+</head>
+
+<body>
+    <!-- form: biểu mẫu, cách để thu thập thông tin từ người dùng -->
+    <form>
+        <div>
+            <label for="username">username:</label>
+            <input type="text" placeholder="username nho" id="username" name="username">
+        </div>
+
+        <!-- 
+        *Nằm trong thẻ form 
+        *trong đó có thẻ input
+        *label và input phải đặt trong div
+        *tiếp theo là có nút button để submit
+        *placeholder: để cho biết được là cần nhập nội dung gì
+        *label(cái nhãn): được dùng để bổ nghĩa
+        +khi người ta thấy thì ngta biết cần nhập gì
+        +kết hợp với cái id và for để khi nhấp vào label sẽ yêu cầu nhập trong ô
+        *cái dấu ? là queyry stream: đường dẫn đặt câu hỏi
+        -->
+        <div>
+            <label for="pwd">password</label>
+            <input id="pwd" type="password" name="password" placeholder="pwd nho">
+        </div>
+        <!-- các thẻ input có thể gặp -->
+        <input type="email" />
+        <input type="number" />
+        <input type="range" min="0" max="10" step="2" />
+        <input type="date" />
+        <input type="color" />
+        <input type="file" />
+        <!-- bản chọn giới tính -->
+        <div>
+            <label for="male">Nam</label>
+            <input id="male" type="radio" name="gender" value="1">
+            <label for="female">Nữ</label>
+            <input id="female" type="radio" name="gender" value="2">
+        </div>
+        <!-- select -->
+        <select name="car" id="car">
+            <option value="1">BMW</option>
+            <option value="2" selected>MEC</option>
+            <option value="3">Audi</option>
+        </select>
+        <!-- text area -->
+        <textarea style="min-width: 200px; max-width: 200px;" name="" id=""></textarea>
+        <!-- fieldset -->
+        <fieldset>
+            <legend>hello</legend>
+            <p>xin chào mọi người</p>
+        </fieldset>
+        <!-- checkbox -->
+        <div>
+            <label for="">tôi đồng ý các điều khoản này</label>
+            <input type="checkbox" value="yes" name="rule">
+        </div>
+        <button>Send</button>
+    </form>
+
+</body>
+
+</html>
