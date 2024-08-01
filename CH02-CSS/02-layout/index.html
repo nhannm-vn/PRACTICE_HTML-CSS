@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ví">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>02-css-layout</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!-- demo background -->
+         <div class="demo1-bg"></div>
+         <div class="demo2-bg"></div>
+         <!-- dựng layout -->
+
+        <div class="parent clearfix">
+            <div class="left-side">leftSide</div>
+            <div class="right-side">rightSide</div>
+        </div>
+
+        <!-- dựng layout shoppee -->
+
+        <p>hello</p>
+
+         <div class="container clearfix">
+            <div class="left-side-banner">
+                <div class="img-block">
+                    <img src="./bannerBu.jpg" alt="">
+                </div>
+                <!-- xử lí img bằng cách bỏ vào cái div -->
+                <!-- img luon so ra cai hinh dung kich co cua no -->
+            </div>
+            <div class="right-side-banner">
+                <div class="right-side-img">
+                    <div class="img-block">
+                        <img src="./bannerNho1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="right-side-img">
+                    <div class="img-block">
+                        <img src="./bannerNho2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+        <div style="height: 100vh;"></div>
+        <!-- chiều cao bằng với 100% màn hình -->
+    </body>
+</html>
