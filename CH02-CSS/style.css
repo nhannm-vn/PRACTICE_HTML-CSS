@@ -1,0 +1,94 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* kích thước của hộp thì hãy tính luôn border-box */
+}
+
+/* unit size: đơn vị đo
+px(canh theo phân giải của màn hình) | mm | cm
+%: khả năng ăn theo cha của nó
+em: coi font-size của cha là một đơn vị
+rem: coi font-size của html là một đơn vị 
+*/
+html{
+    font-size: 62.5%; /* 10px */
+    /* font-size: 16px thì mấy ông già phóng to k đc */
+    font-family: sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+
+/* outline */
+.demo-ipt{
+    outline: none;
+    /* trước khi cus input thì cho nó none */
+    margin: 3rem;
+    padding: 1rem;
+    border: 1px solid red;
+    outline: 5px solid blue;
+    outline-offset: 2rem;
+    /* khoảng cách giữa border và outline */
+}
+.demo-border{
+    border: 3px solid teal;
+    /* doule: 2 dường */
+    border-style: solid;
+    border-top: 3px solid red;
+    border-right: 3px solid yellow;
+    border-bottom: 3px solid blue;
+    border-left: 3px solid rebeccapurple;
+    /* colorspace: để chọn màu hợp lí */
+    border-radius: 0.3rem;
+    /* nó sẽ bo viền cái border*/
+    background-color:cadetblue;
+     
+}
+
+.circle{
+    background-color: aquamarine;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    /* 10rem */
+}
+
+.triangle{
+    width: 20rem;
+    height: 20rem;
+    border: 3px solid teal;
+    /* doule: 2 dường */
+    border-style: solid;
+    border-top: 111px solid red;
+    border-right: 102px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 99px solid transparent;
+    /* mau trong suot transparent
+    clip-path-maker để lấy hình đẹp
+    */
+}
+
+.demo-text{
+    color: steelblue;
+    background-color: bisque;
+    /* dùng để tô màu cho content */
+    font-size: 3rem;
+    /* direction: rtl; */
+    /* text-align: end; */
+    text-decoration: underline solid chartreuse;
+    /* text-decoration: where style color; */
+    text-indent: 3rem;
+    /* giúp mình thục vô đầu dòng */
+    /* letter-spacing: 3rem; */
+    word-spacing: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: -3px 0px 0px black;
+}
+
+.demo-text span{
+    vertical-align: super;
+    /* canh lề theo trục dọc */
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>01-css: model</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!-- outline | border | circle | unit size | text | vertical-align -->
+        <!-- outline: khác với border và thường xuất hiện ở input
+        không ảnh hưởng đến model-boxs
+        margin >(outline) > outline-offset  border > padding > content
+        -->
+         <!-- thường hầu hết các thẻ k có outline trừ thẻ input -->
+        <input class="demo-ipt" type="text">
+        <div class="demo-border">tui demo border</div>
+
+        <div class="circle"></div>
+        <!-- bình thường nó vẫn sẽ tồn tại nhưng
+        mà mình sẽ không thấy nó
+        -->
+
+        <div class="triangle"></div>
+
+        <!-- text -->
+         <p class="demo-text">
+            xin chào các bạn, <span>m</span>ình tên là Điệp đẹp trai, còn các bạn trong lớp 
+            đều ế
+        </p>
+
+        <!--  -->
+        <div style="height: 100vh;"></div>
+    </body>
+</html>
