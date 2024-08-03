@@ -1,0 +1,72 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+.title_block{
+    padding: 1rem 1.5rem;
+}
+.nav_list{
+    background-color: rgb(195, 157, 157);
+    display: flex;
+    padding: 1rem 0px;
+    padding-left: 1rem;
+}
+.nav_list_element{
+    list-style-type: none;
+    padding-right: 2rem;
+}
+
+.father{
+    /* border: 3px solid black; */
+    display: flex;
+}
+.column1{
+    /* border: 3px solid blue; */
+    width: 65%;
+    background-color: rgb(178, 207, 127);
+    padding-left: 1.7rem;
+}
+.column2{
+    /* border: 3px solid red; */
+    width: 35%;
+    background-color: rgb(182, 156, 234);
+    padding-left: 1rem;
+}
+
+.content_col1_1{
+    padding: 2rem 0px;
+}
+.title_col{
+    padding: 1rem 0px;
+}
+.link_block{
+    padding: 2rem 0px;
+}
+.content_col1_2{
+    padding-bottom: 4rem;
+}
+.content_col2_1{
+    padding: 2rem 0;
+}
+.nav_col2{
+    padding-left: 4rem;
+}
+.nav_list_element_body{
+    padding-left: 1rem;
+    list-style-type: disc;
+    /* disc la cai cham den tron */
+}
+.footer{
+    background-color: moccasin;
+}
+.footer_content{
+    padding: 1rem 1rem;
+}

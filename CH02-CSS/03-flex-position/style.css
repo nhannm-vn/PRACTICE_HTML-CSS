@@ -1,0 +1,38 @@
+/* reset css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Roboto Condensed", sans-serif;
+    /* dafont google font */
+    /* font-weight: 100; */
+    font-weight: 400;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+/* demo flex */
+.cha{
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con1{
+    border: 3px solid red;
+    width: 10rem;
+    height: 10rem;
+    /* order: 1; de chuyen nguoc 2 thang */
+}
+
+.con2{
+    border: 3px solid blue;
+    width: 10rem;
+    height: 10rem;
+}

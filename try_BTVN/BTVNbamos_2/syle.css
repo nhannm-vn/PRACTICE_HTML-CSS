@@ -1,0 +1,58 @@
+/* reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+.container{
+    margin: 0px 0.5rem;
+}
+.title_content{
+    text-align: center;
+    color: green;
+    padding: 2rem 8rem;
+}
+.content{
+    padding: 2rem 0;
+}
+.content_1{
+    background-color: pink;
+}
+.content_block_1{
+    text-align: center;
+    color: hotpink;
+    margin-bottom: 2rem;
+}
+.content_2{
+    background-color: khaki;
+    text-align: center;
+    font-style: italic;
+}
+.content_p_1{
+    padding-bottom: 2rem;
+}
+.content_p_2{
+    color: red;
+    padding-bottom: 2rem;
+}
+.content_p_3{
+    color: green;
+}
+/* bình thường link màu trắng có backgournd: đen
+khi đụng vào thì link chuyển vàng và background đỏ
+ */
+.link_block{
+    color: white;
+    background-color: black;
+}
+.link_block:hover{
+    color: yellow;
+    background-color: red;
+}

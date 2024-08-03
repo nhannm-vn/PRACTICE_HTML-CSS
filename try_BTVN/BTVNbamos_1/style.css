@@ -1,0 +1,33 @@
+/* reset css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+.container{
+    padding-left: 1rem;
+}
+.title{
+    margin-bottom: 2rem;
+}
+.special_character{
+    font-size: 5rem;
+    color: red;
+}
+.content{
+    background-color: rgb(164, 161, 161);
+    margin-top: 1rem;
+    font-family: sans-serif;
+}
+.special_content{
+    padding-left: 5rem;
+}
+.special_content_child{
+    padding-left: 2rem;
+}

@@ -61,7 +61,7 @@ body{
 /* pseudo element: phần tử ảo 
 bootrap clearfix
 tạo ra 1 đối tượng giả có kích thước bằng với 2 thằng kia
-làm cho nghĩ là nó đang ông 2 thằng kia
+làm cho nghĩ là nó đang ôm 2 thằng kia
 */
 .clearfix::after{
     display: block;

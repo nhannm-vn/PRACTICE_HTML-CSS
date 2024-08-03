@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 3: flex-position</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- điều chỉnh font theo ý mình muốn -->
+    <p>
+        xin chào mình là Điệp đẹp trai <br />
+        1 ngày làm việc của mình là được làm việc với fullhouse
+    </p>
+    <!-- lên google font chọn font mà mình mong muốn sau đó
+          copy code rồi bỏ vào. Khi làm vậy ta có thể phá thể font-weight: 400 và 700
+          bỏ vào html trước rồi mới qua set bên css
+        
+        **Tình nghĩa anh em có chắc bền lâu, ngẫu nhiên mình lìa xa
+    -->
+    
+    <!-- 
+        cách 1: inline-block + font-size
+        cách 2: float/width + clearfix
+        cách 3: flex | grid(chia ra 12 col)
+        flex dùng để thay thế cho các cấp chia layout cũ
+        +justify: trục chính
+        +align: trục phụ
+        *content: là căn chỉnh các khoản hỡ giữa các item
+        *items: căn chỉnh cả khối các item
+
+        **justify-content
+        flex-start: căn chỉnh các các phần tử về phía bên trái
+        flex-end: căn chỉnh các khối về phía bên phải
+        center: căn chỉnh ở chính giữa vùng chứa
+        space-between: được căn cân bằng giữa các phần tử
+        space-around: được căn cân bằng khoảng cách xung quanh
+
+        **align-items
+        flex-start: Items align to the top of the container.
+        flex-end: Items align to the bottom of the container.
+        center: Items align at the vertical center of the container.
+
+        **flex-direction
+        *row là mặc định
+        row: Các mục được đặt theo cùng hướng với văn bản.
+        row-reverse: Các mục được đặt ngược với hướng văn bản.
+        column: Các mục được đặt từ trên xuống dưới.(không chọn trục chính là ngang mà chọn dọc trên xuống)
+        column-reverse: Các mục được đặt từ dưới lên trên.
+
+        **order: đảo vị trí cho trong từng thằng riêng(chỉ tác động cho những thằng con thôi| mặc định sắp xếp theo thứ tự đứng trước sau)
+        mặc định lúc đầu mỗi thằng đều có giá trị là 0
+        chúng ta có thể sử dụng thuộc tính này để đặt nó thành giá trị số nguyên dương hoặc âm (-2, -1, 0, 1, 2).
+
+        align/justify-self: dùng để canh chỉnh riêng biệt thằng con
+
+        flex: thực tế là nó cố dồn hết tất cả vào trên cùng một hàng
+        flex-wrap: căn chỉnh số lượng phần tử phù hợp 1 dòng
+        xuống hàng cho phù hợp: wrap
+        mặc định: nowrap
+        xuống hàng mà còn lật(xuống hàng rồi mới lật): wrap-reverse
+
+        **flex-flow: kết hợp vừa direction vừa wrap
+
+        _vẫn có align-content và justify-items
+        _khoảng giữa các khối con là content
+    -->
+    <div class="cha">
+        <div class="con1"></div>
+        <div class="con2"></div>
+    </div>
+</body>
+
+</html>
