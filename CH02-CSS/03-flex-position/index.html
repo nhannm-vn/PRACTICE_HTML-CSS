@@ -7,7 +7,8 @@
     <title>Bai 3: flex-position</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -23,7 +24,11 @@
         
         **Tình nghĩa anh em có chắc bền lâu, ngẫu nhiên mình lìa xa
     -->
-    
+
+    <!-- demo attribute onclick -->
+    <p class="demo-sticky" onclick="this.style.color = 'red'">Baby! plz clik me</p>
+    <!-- khi mình click thì nó sẽ làm gì đó -->
+
     <!-- 
         cách 1: inline-block + font-size
         cách 2: float/width + clearfix
@@ -74,6 +79,52 @@
         <div class="con1"></div>
         <div class="con2"></div>
     </div>
+
+    <!-- demo flex 2 -->
+    <div class="chu">
+        <div class="chau">
+            <h1>Anh Cháu thích cô Chắc</h1>
+            <p>Nhà anh Cháu bên trái kế nhà cô Chắc</p>
+            <p>Mà cô chắc có lẽ cô Chắc chắc không thích anh Cháu</p>
+        </div>
+        <div class="chac">
+            <h1>Nhà cô Chắc chắc là bên phải kế nhà cô Chắc</h1>
+            <p>Nhà anh Cháu cái gì cũng tốt trừ đôi đôn chề</p>
+            <p>Nhà anh cháu có vui chơi với Jony đen, và anh Cáo</p>
+            <p>Dù rằng anh cháu chắc thích cô Chắc nhưng chắc không
+                chơi được với anh cháu <br />vì anh cháu không chơi đồng dbr
+            </p>
+        </div>
+    </div>
+    <!-- display: flex tự động scale chiều cao của 2 thằng bằng nhau
+      theo độ lớn nội dung bên trong -->
+
+    <!-- demo position -->
+
+    <div class="big-div">
+        <div class="small-div">Tôi là div nhỏ</div>
+        <p> 
+            Ahihi xin chào cuộc đời <br/>
+            dù nhiều lần khiến ta chơi vơi <br/>
+            tuy học ít nhưng chơi cũng nhiều <br/>
+            chiều ăn bánh tối lại vào hang</p>
+            Ahihi xin chào cuộc đời <br/>
+            dù nhiều lần khiến ta chơi vơi <br/>
+    </div>
+
+    <!-- demo nut fb -->
+    <div class="btn-fb">
+        <div class="icon">F</div>
+    </div>
+
+    <!-- pseudo element -->
+    <div class="ahihi">xin chào</div>
+
+    <!-- btn: pseudo element + position  -->
+    <button class="btn-demo">BUTTON</button>
+
+    <!-- dung quan tam -->
+    <div style="height: 100vh;"></div>
 </body>
 
 </html>

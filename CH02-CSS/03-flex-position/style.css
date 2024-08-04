@@ -36,3 +36,141 @@ body{
     width: 10rem;
     height: 10rem;
 }
+/*  */
+.chu{
+    border: 3px solid red;
+    display: flex;
+    /* mặc định của mày là flex-wrap: nowrap
+    nếu mà kích cỡ thằng con đầu là một số thì nó phải canh
+    theo nếu xài wrap mà kích cỡ k hợp lí thì rớt 
+    */
+}
+.chau{
+    border: 3px solid blue;
+    width: 30rem;
+}
+.chac{
+    border: 3px solid seagreen;
+    width: calc(100% - 30rem);
+}
+
+/* demo position */
+.big-div{
+    border: 3px solid green;
+    width: 25rem;
+    position: relative;
+}
+.small-div{
+    border: 3px solid blue;
+    background-color: aqua;
+    /* position: relative;
+    top: 2rem;
+    left: 2rem; */
+    position: absolute;
+
+    /* combo đánh ra giữa một đối tượng */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* biến hình và dịch chuyển */
+
+    z-index: 0;
+    /* trục z ẩn lên xuống chỉ có trong position 
+    vì chỉ có position làm layout phân tầng*/
+}
+
+/* position: vị trí của một cái div (dành cho những thằng nằm không có tuần tự)
+**Không được lạm dụng position vì khi dán lên thì nó k ảnh hưởng layout
+
+static: mặc định, tĩnh và không dịch chuyển (thằng nào cũng có)
+*/
+
+/* relative: xuất hồn, hồn canh theo xác 
+xác vẫn ở đó nhưng hồn bay. Tự căn chỉnh chính nó so với trạng thái static
+*/
+
+/* absolute: nó sẽ dựa vào thằng cha nó để canh chỉnh
+** cha nó phải là một thằng khác static
+*/
+
+
+/* demo nut fb */
+.btn-fb{
+    border: 1px solid black;
+    width: 5rem;
+    height: 5rem;
+    /* c2: */
+    border-radius: 50%;
+    
+    /*c1:  display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    position: fixed;
+    /* fixed để nó nằm cố định */
+    right: 0;
+    bottom: 0;
+}
+
+.icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* thằng flex nó sẽ rất mạnh trong trường hợp đánh 
+nội dung ra giữa khi th cha chỉ chứa duy nhất 1 vật thể
+còn nhiều vật thể thì sẽ không nên
+flex nó sẽ không phân tầng
+*/
+
+.demo-sticky{
+    position: sticky;
+    top: 1rem;
+}
+/* khi kéo chuột thì nó sẽ dính*/
+
+/* pseudo tag: div span 
+   pseudo class:  :horver|:active|unvisited|:focus
+   pseudo element:  ::after  |  ::before
+*/
+.ahihi::after{
+    content: "hehe";
+}
+.ahihi::before{
+    content: "hehe";
+}
+
+/* btn-demo */
+.btn-demo{
+    margin: 3rem;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border: 1px solid hotpink;
+    background-color: transparent;
+    color: hotpink;
+    position: absolute;
+}
+.btn-demo::after{
+    content: "";
+    background-color: hotpink;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+/* viết vậy là cái nút bị sờ thì th after bị ảnh hưởng */
+.btn-demo:hover:after{
+    width: 100%;
+    left: 0;
+    /* đổi gốc luôn */
+}
+
+.btn-demo:hover{
+    color: white;
+}
