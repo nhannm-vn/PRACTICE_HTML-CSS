@@ -1,0 +1,123 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+/*  */
+.fa_block{
+    /* border: 1rem solid black; */
+    display: flex;
+}
+.right{
+    /* border: 1rem solid red; */
+    width: 50%;
+    position: relative;
+    
+}
+
+
+.right_content{
+    height: 100%;
+    background-color: rgb(120, 158, 140);
+    position: fixed;
+    width: 50%;
+}
+.right_img_girl{
+    background-image: url("./girl.png");
+    height: 100vh;
+    /* position: absolute;
+    background-size: cover; */
+    background-repeat: no-repeat;
+    background-size: 28rem;
+    background-position: center;
+    
+}
+
+.right_button{
+    position: fixed;
+    right: 6rem;
+    top: 2rem;
+}
+.right_button_content{
+    padding: 1rem 5.5rem;
+    outline: none;
+    background-color: black;
+    font-size: 1.7rem;
+    transition: 0.4s;
+    border: none;
+    text-decoration: none;
+    color: white;
+}
+.right_button_content:hover{
+    background-color:  white;
+    color: black;
+}
+
+
+/* left */
+.left{
+    /* border: 1rem solid green; */
+    width: 50%;
+    background-color: rgb(243, 243, 243);
+    
+}
+
+.title{
+    display: flex;
+    width: 100%;
+    font-size: 2rem;
+    padding-top: 4rem;
+    padding-left: 8rem;
+    margin-bottom: 20rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.left_title{
+    width: 50%;
+    font-weight: 100;
+}
+.left_title_content_link{
+    text-decoration: none;
+    color: black;
+}
+.right_title{
+    width: 50%;
+    display: flex;
+    padding-left: 2rem;
+    font-weight: 300;
+}
+.right_title_content{
+    padding-right: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.right_title_content:hover{
+    color: rgb(130, 225, 130);
+}
+
+.body_block_left{
+    margin-bottom: 10rem;
+}
+
+
+.body_block_left_name{
+    text-align: center;
+    font-size: 9rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.body_block_left_name_1{
+    padding-left: 17.5rem;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4rem;
+}

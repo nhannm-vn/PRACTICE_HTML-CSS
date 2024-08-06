@@ -1,0 +1,48 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* tinh luon border cho do dai */
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+
+/*  */
+.demo_button{
+    display: inline-block;
+    margin: 2rem 3rem;
+}
+.link_button{
+    padding: 1rem 2rem;
+    border: 2px solid pink;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: black;
+    background-color: transparent;
+    position: relative;
+}
+.link_button::after{
+    content: "";
+    background-color: pink;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: 0.3s;
+    /* danh may chim xuong duoi */
+}
+/* dung vao hover thi after bi anh huong */
+.link_button:hover:after{
+    width: 100%;
+    left: 0;
+    
+}
