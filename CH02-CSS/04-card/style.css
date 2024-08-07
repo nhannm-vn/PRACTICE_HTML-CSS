@@ -1,0 +1,121 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+
+/*  
+*/
+.container{
+    /* border: 1px solid red; */
+    /* đánh toàn bộ ra giữa khi màn hình thu nhỏ 
+    nội dung chỉ dừng lại ở 1320px thôi*/
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+    /* đánh ra cách viền 2 bên cho đẹp */
+}
+.card-carousel{
+    /* border: 1px solid green; */
+    display: flex;
+    /* lên cùng một hàng */
+    /**** mặc định chỉnh flex thì nó sẽ là nowrap
+    cho nên khi kéo nhỏ vào nó sẽ bị hở sườn
+    để tránh việc đó thì ta cần fix thành wap để cho nó xuống */
+    flex-wrap: wrap;
+    /* nhưng khi ta wrap rồi thì nó lại xuống 1 vật thể
+    do mình chưa bỏ 2 cái viền */
+    justify-content: center;
+    /* giúp khi dù có bóp vào thì nó cũng nằm giữa */
+}
+
+/* lấy đường viền của card__block 
+**Nói về kích thước chiếm dụng một block của em sẽ chiếm 262(bỏ khoảng cách từ block đến container)
+**Khoảng cách từ sát border của block ra là 3px
+==> chiều dài thực tế không tính margin là 256(kích thước thật của hình)
+**Khoảng cách giữa cái block với border phía trong là 3px
+==> 250
+**Trừ cho 2 border nữa là 248(bề width của hình)
+*/
+.card__block{
+    width: 25.6rem;
+    margin: 0px 0.3rem;
+    padding: 0.3rem;
+    border: 1px solid #eeeeee;
+    background-color: #fafafa;
+    /* màu giấy */
+
+    
+}
+
+.card__block:hover{
+    /* độ bóng cho block */
+    box-shadow: 3px 3px 8px 1px #695e5e;
+    transition: 0.3s;
+}
+
+.card-img{
+    width: 24.8rem;
+    overflow: hidden;
+    /* những phần tử nào nằm ngoài cái div này sẽ ẩn đi
+    để giúp tấm hình k bể hoặc lòi ra ngoài
+    */
+}
+/* 
+**một tấm hình lúc nào cũng phải được bảo bởi div để k bể
+**fix về display block
+ */
+.card-img img{
+    display: block;
+    width: 100%;
+}
+
+.car-infor{
+    margin: 0.3rem 0;
+}
+
+.card-contronller{
+    display: flex;
+    /* đánh cho rớt cùng hàng */
+    justify-content: space-between;
+}
+.card-controller__block{
+    /* giúp giữa nó có khoảng cách nho giua 2 nut */
+    width: calc(50% - 1px);
+}
+
+/* dân chơi tự biết nút thì phải fix về inlign-block */
+.card-controller-btn{
+    display: block;
+    text-align: center;
+    /* chỉ ra giữa về mặt ngang */
+    background-color: teal;
+
+    /* giúp ra giữa về mặt dọc */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* padding: 1rem; */
+    /* nhược điểm của padding là k kiểm soát được chiều cao của nó */
+    height: 3rem;
+
+    color: white;
+    text-decoration: none;
+}
+.card-controller-btn:hover{
+    background-color: rgb(0, 163, 163);
+}
+
+/* màn hình nhỏ muốn splide nằm chính giữa  dùng li đánh card__block ra giữa*/
+.splide__slide{
+    display: flex;
+    justify-content: center;
+}
