@@ -1,0 +1,94 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+/* body */
+.container{
+    /* border: 1px solid red; */
+    /* chiều rộng thích hợp cho màn hình laptop */
+    max-width: 1320px;
+    /* đánh ra giữa */
+    margin: 0px auto;
+    padding: 0px 0.5rem;
+}
+.card-carousel{
+    /* border: 1px solid green;    */
+    display: flex;
+    /* lên cùng một hàng */
+    /**** mặc định chỉnh flex thì nó sẽ là nowrap
+    cho nên khi kéo nhỏ vào nó sẽ bị hở sườn
+    để tránh việc đó thì ta cần fix thành wap để cho nó xuống */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card__block{
+    border: 1px solid #eeeeee;
+    width: 25.6rem;
+    padding: 0.3rem 0.3rem;
+    margin: 0 0.3rem;
+    background-color: #fafafa;
+    
+}
+.card__block:hover{
+    box-shadow: 3px 3px 8px 1px #695e5e5e;
+    transition: 0.3s;
+}
+.card-img{
+    width: 24.8rem;
+    overflow: hidden;
+    /* border: 1px solid orange; */
+    /* những phần tử nằm ở ngaoif div này sẽ bị ẩn đi */
+    margin-bottom: 0.3rem;
+}
+.card-img img{
+    display: block;
+    width: 100%;
+}
+.card-infor{
+    /* border: 1px solid orange; */
+    margin-bottom: 0.3rem;
+}
+.card-controller{
+    display: flex;
+    /* border: 1px solid orange; */
+    text-align: center;
+    justify-content: space-between;
+}
+.card-controller__block{
+    width: calc(50% - 1%);
+    /* border: 1px solid black; */
+}
+.card-controller-btn{
+    display: block;
+    background-color: teal;
+    text-decoration: none;
+    color: white;
+    height: 3rem;
+
+    /* danh ra giua */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-controller-btn:hover{
+    color: rgb(2, 190, 190);
+}
+
+/* những thẻ a và thẻ img có kiểu display là inlign nếu muốn canh chỉnh thì đều 
+phải chỉnh display về block */
+
+/*  */
+.splide__slide{
+    display: flex;
+    justify-content: center;
+}
