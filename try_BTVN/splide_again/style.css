@@ -1,0 +1,79 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body{
+    font-size: 1.6rem
+}
+
+/*  */
+.container{
+    /* border: 1px solid red; */
+    /* do lon cua man hinh may tinh */
+    max-width: 1320px;
+    /* danh vo giua */
+    margin: 0px auto;
+}
+
+.card-carousel{
+    /* border: 1px solid green; */
+    margin: 0px 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card__block{
+    border: 1px solid #eeeeee;
+    background-color: #fafafa;
+    margin: 0px 0.3rem;
+    padding: 0px 0.3rem;
+    width: 25.6rem;
+}
+.card__block:hover{
+    box-shadow: 3px 3px 8px 1px #695e5e;
+    transition: 0.3s
+}
+.card-img{
+    /* border: 1px solid orange; */
+    width: 24.8rem;
+    overflow: hidden;
+}
+.card-img img{
+    display: block;
+    width: 100%;
+}
+.card-infor{
+    /* border: 1px solid orange; */
+    margin: 0.5rem 0px;
+}
+.card-controller{
+    display: flex;
+    justify-content: space-between;
+}
+.card-controller__block{
+    width: calc(50% - 1%);
+}
+.card-controller-btn{
+    display: block;
+    height: 3rem;
+    background-color: teal;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.card-controller-btn:hover{
+    color: rgb(0, 187, 187);
+}
