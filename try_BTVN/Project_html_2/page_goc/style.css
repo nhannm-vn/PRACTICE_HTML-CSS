@@ -11,6 +11,13 @@ html{
 body{
     font-size: 1.6rem;
 }
+
+/* js */
+body { 
+    opacity: 0;
+    transition: opacity .7s;
+ }
+
 /*  */
 .container{
     border: 1px solid black;
