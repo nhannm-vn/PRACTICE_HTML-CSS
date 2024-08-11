@@ -16,7 +16,7 @@ body{
 body { 
     opacity: 0;
     transition: opacity .7s;
-}
+ }
 
 /*  */
 .container{
@@ -83,62 +83,33 @@ body {
 }
 /*  */
 .content-bottom{
-    margin: 0px 10rem;
+    /* border: 1px solid hotpink; */
+    /* display: flex;
+    justify-content: space-between; */
+    margin-top: 15rem;
 }
-.content-bottom-resume{
+
+.content-bottom-just{
     /* border: 1px solid red; */
-    margin-top: 10rem;
-    margin-bottom: 6rem;
-}
-
-.content-bottom-resume-top{
-    /* border: 1px solid blue; */
-    width: 100%;
-}
-.content-bottom-resume-top-left{
-    /* border: 1px solid yellow; */
-    width: 50%;
-    font-size: 3.2rem;
-    font-weight: 700;
-}
-.content-bottom-resume-top-right{
-    /* border: 1px solid yellow; */
-    width: 50%;
-}
-
-.content-bottom-resume-work-left{
-    font-size: 2.2rem;
-    font-weight: 500;
-}
-.content-bottom-resume-work-right-1{
     display: flex;
-    padding-left: 40rem;
-    font-size: 1.4rem;
-}
-
-.content-bottom-work-top{
+    margin: 0px 15rem;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3rem;
 }
-.content-bottom-resume-work-right-1-present{
-    margin-right: 1rem;
-    width: 35rem;
+.content-bottom-just-left{
+    /* border: 1px solid blue; */
+    width: calc(50% - 7.2%);
 }
-.content-bottom-resume-work-right-1-content{
-    padding-right: 20rem;
-    line-height: 2.5rem;
+.content-bottom-just-right{
+    /* border: 1px solid blue; */
+    overflow: hidden;
+    width: calc(50% - 7.2%);
+    margin-top: 11.5rem;
 }
-
-.content-bottom-resume-work-right-1{
-    margin-bottom: 7rem;
-}
-
-.content-bottom-resume-work-ul{
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 2.2rem;
-    margin-right: 11rem;
-    
+.content-bottom-just-right img{
+    display: block;
+    width: 100%;
 }
 /*  */
 .content-end{

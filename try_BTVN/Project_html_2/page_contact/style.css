@@ -16,7 +16,7 @@ body{
 body { 
     opacity: 0;
     transition: opacity .7s;
-}
+ }
 
 /*  */
 .container{
@@ -83,62 +83,75 @@ body {
 }
 /*  */
 .content-bottom{
-    margin: 0px 10rem;
-}
-.content-bottom-resume{
-    /* border: 1px solid red; */
-    margin-top: 10rem;
-    margin-bottom: 6rem;
-}
-
-.content-bottom-resume-top{
-    /* border: 1px solid blue; */
-    width: 100%;
-}
-.content-bottom-resume-top-left{
-    /* border: 1px solid yellow; */
-    width: 50%;
-    font-size: 3.2rem;
-    font-weight: 700;
-}
-.content-bottom-resume-top-right{
-    /* border: 1px solid yellow; */
-    width: 50%;
-}
-
-.content-bottom-resume-work-left{
-    font-size: 2.2rem;
-    font-weight: 500;
-}
-.content-bottom-resume-work-right-1{
-    display: flex;
-    padding-left: 40rem;
-    font-size: 1.4rem;
-}
-
-.content-bottom-work-top{
+    /* border: 1px solid hotpink; */
     display: flex;
     justify-content: space-between;
-}
-.content-bottom-resume-work-right-1-present{
-    margin-right: 1rem;
-    width: 35rem;
-}
-.content-bottom-resume-work-right-1-content{
-    padding-right: 20rem;
-    line-height: 2.5rem;
+    margin-top: 15rem;
 }
 
-.content-bottom-resume-work-right-1{
-    margin-bottom: 7rem;
+.content-bottom-just{
+    margin: 0px 16rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
-
-.content-bottom-resume-work-ul{
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 2.2rem;
-    margin-right: 11rem;
+.content-bottom-just-left{
+    /* border: 1px solid blue; */
+    width: 30%;
     
+}
+.content-bottom-just-right{
+    /* border: 1px solid blue; */
+    margin-top: 2rem;
+    width: 70%;
+}
+.full-button-small-1{
+    display: flex;
+    justify-content: flex-end;
+    /* border: 2px solid green; */
+    
+}
+.full-button-small-2{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    /* border: 2px solid green; */
+    
+}
+.input-firstname{
+    background-color: #eeeeee;
+    outline: none;
+    border: 1px solid black;
+    height: 3rem;
+}
+.input-firstname:hover{
+    outline: none;
+    border: 2px solid black;
+}
+
+.button-link{
+    border: 1px solid black;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    text-align: center;
+}
+.button-link-element{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+.button-link-element:hover{
+    background-color: #eeeeee;
+    transition: 0.3s;
 }
 /*  */
 .content-end{
