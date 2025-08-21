@@ -1,0 +1,351 @@
+/* reset css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    max-width: 980px;
+    margin: 0px auto;
+    /* border: 1px solid red; */
+    background-color: #fafafa;
+    
+}
+/*  */
+
+.super_1{
+    position: sticky;
+    /* border: 1px solid green; */
+    max-width: 100%;
+    background-color: #fafafa;
+    top: 0px;
+    z-index: 1;
+}
+.head_block{
+    /* border: 1px solid green; */
+    
+}
+
+.head_block_content{
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0rem;
+    
+}
+.head_block_content_left{
+    /* border: 1px solid purple; */
+    font-size: 3rem;
+    font-family: "DM Serif Text", serif;
+    font-weight: 5;
+    
+
+}
+.head_block_content_right{
+    /* border: 1px solid purple; */
+    font-family: "Roboto", sans-serif;
+    
+}
+/*  */
+.list_block_nav{
+    /* border: 1px solid hotpink; */
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 0rem;
+}
+.list_block_element{
+    /* border: 1px solid black; */
+    list-style-type: none;
+}
+.list_block_link{
+    font-family: "DM Serif Text", serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
+.list_block_link:hover{
+    transition: 0.2s;
+    color: rgb(63, 158, 158);
+}
+/*  */
+.super_2{
+    position: relative;
+}
+
+.background_attackment{
+    background-image: url("./hinh1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.background_clearfix{
+    border: 1px solid white;
+    position: absolute;
+    width: 89.1rem;
+    height: 31.6rem;
+    /* combo đánh position ra giữa */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fa-solid{
+    text-decoration: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5rem;
+    
+}
+
+.p1{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 1.4rem;
+    word-spacing: 0.5rem;
+    margin-top: 4.5rem;
+    letter-spacing: 0.3rem;
+}
+.p2{
+    color: white;
+    font-family: "DM Serif Text", serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    font-size: 8.5rem;
+}
+
+
+/*  */
+.super_3{
+    /* border: 1px solid red; */
+    margin-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+.super_3_content{
+    /* border: 1px solid green; */
+    display: flex;
+    padding: 0px 5rem;
+    justify-content: space-between;
+}
+
+.super_3_content_left{
+    /* border: 1px solid yellow; */
+    padding-right: 12rem;
+    height: 100%;
+    width: 60%;
+    padding-bottom: 4rem;
+    
+}
+.super_3_content_left h1{
+    font-family: "DM Serif Text", serif;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    
+}
+.super_3_content_left p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    
+}
+
+.super_3_content_right{
+    /* border: 1px solid yellow; */
+    background-image: url("./hinh3.jpg");
+    background-size: cover;
+    width: 40%;
+}
+
+.link_read_more{
+    text-decoration: none;
+    color: black;
+    font-family: "DM Serif Text", serif;
+    font-weight: 100;
+    
+}
+.link_read_more:hover{
+    color: rgb(52, 169, 169);
+}
+
+/*  */
+.title_spe{
+    font-family: "DM Serif Text", serif;
+    font-weight: 100;
+    padding: 6rem 5rem;
+}
+
+/*  */
+.super_4{
+    /* border: 1px solid coral; */
+    margin-bottom: 8rem;
+}
+
+.super_4_block{
+    /* border: 1px solid yellow; */
+    display: flex;
+    padding: 0rem 5rem;
+    
+}
+
+.super4_content{
+    /* border: 1px solid green; */
+}
+.super4_content h2{
+    font-family: "DM Serif Text", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+.super4_content p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding-right: 6rem;
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+}
+.super4_content div{
+    margin: 3rem 0rem 2rem 0rem;
+}
+
+/*  */
+.super_5{
+    /* border: 1px solid orange; */
+    padding-left: 5rem;
+}
+
+.super_5_block{
+    /* border: 1px solid blue; */
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    
+}
+
+.super_5_block_left{
+    /* border: 1px solid greenyellow; */
+    height: 55rem;
+    overflow: hidden;
+}
+
+.super_5_block_right{
+    /* border: 1px solid greenyellow; */
+    margin-left: 10rem;
+    
+}
+
+.img_room{
+    background-image: url("./hinh2.jpg");
+    background-size: calc(95%);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.super5_icon{
+    display: flex;
+    margin: 5rem 0;
+}
+.super_5_input{
+    display: flex;
+}
+.super_5_input_content{
+    text-indent: 1.5rem;
+    outline: none;
+    background-color: #fafafa;
+    border: 1px solid rgb(48, 42, 42);
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+.super_5_input_content:hover{
+    border-bottom: 2px solid black;
+    transition: 0.2ms;
+}
+
+.form-control{
+    /* max-width: 37rem;
+    min-width: 37rem;
+    text-indent: 2rem;
+    min-height: 12rem;
+    max-height: 12rem; */
+    resize: none;
+    height: 12rem;
+    width: 37rem;
+    background-color: #fafafa;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    outline: none;
+    text-indent: 2rem;
+}
+.form-control:hover{
+    border-bottom: 2px solid black;
+    transition: 0.2ms;
+}
+
+/*  */
+
+.button_vip{
+    padding: 3rem 0 3rem 12rem; 
+}
+
+.button_vip_link{
+    text-decoration: none;
+    color: black;
+    border: 0.2rem solid black;
+    font-size: 2rem;
+    background-color: transparent;
+    padding: 1rem 3rem;
+    font-weight: 500;
+    position: relative;
+    /* cho thằng link nổi lên */
+    border-radius: 1.5rem;
+    text-shadow: -1px 1px 1px #696969;
+    z-index: 0;
+    /* lí do phải có cái này là do nó nằm lồng trong nhiều lớp chứ không phải như bthg
+    để số 0 để nó phân biệt với cái lớp ảo, lớp ảo nó sẽ đo với cha nó */
+}
+.button_vip_link::after{
+    content: "";
+    /* không có content là không chạy được vì ít nhất phải chứa cái gì */
+    position: absolute;
+    width: 0%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgb(222, 131, 66);
+    transition: 0.3s;
+    z-index: -1;
+    border-radius: 1.5rem;
+}
+/* đụng vào thì pt ảo bị ảnh hưởng */
+.button_vip_link:hover::after{
+    width: 100%;
+    left: 0;
+    /* đổi trục rồi tăng width sau đó mới đổi trục mặc định và giảm width */
+}
+/* 
+có nghĩa là bthg nếu không đụng nó thì nó sẽ có width: 0% và gốc là bên phải
+khi ta đụng hover thì phần tử ảo bị ảnh hưởng thì đổi trục qua trái và tăng lên 100% xong khi không đụng vào nó sẽ về trạng thái cũ 
+là đổi trục qua phải và về 0%
+*/
+
+.button_vip_link:hover{
+    color: white;
+    box-shadow: 2px -3px 1px 1px #695e5e5e;
+}
